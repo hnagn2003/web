@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -28,10 +31,9 @@
     <!-- css -->
     <link rel="stylesheet" href="{% static 'mainapp/css/layout.css' %}">
     <!-- icon -->
-    <link rel="icon" href="{% static 'mainapp/png/logo.webp' %}" />
+    <link rel="icon" href="{% static 'mainapp/png/logo.png' %}" />
     <title>
-        {% block title %} 
-        {% endblock title %}
+        Book Space
     </title>
     {% block head %} 
     {% endblock head %}
@@ -42,17 +44,16 @@
         <a name='top'>
             <div id="topheader">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="/"><img class="navbrandimg" src="{% static 'mainapp/png/brand-img.webp' %}"></a>
+                    <a class="navbar-brand" href="/"><img class="navbrandimg" src="{% static 'mainapp/png/logo.png' %}"></a>
                     <!-- Search Bar -->
                     <div class="searchbar" id="searchdropdown">
-                        <input type="text" id="bookName" onkeyup="myFunction()" placeholder="&#xf002    Search for books" title="Type in a name" style="outline: none;font-family:FontAwesome, kumbh sans;">
+                        <input class="search-place" type="text" id="bookName" onkeyup="myFunction()" placeholder="&#xf002            Search for books" title="Type in a name">
                         <div class="dropdown-content" id="search-dropdown">
                         </div>
                     </div>
                     <!-- End Search Bar -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav text-center">
@@ -102,6 +103,7 @@
                     </div>
                 </nav>
             </div>
+        </a>
     </header>
     <!-- Messages -->
     {% for message in messages %}
@@ -163,14 +165,16 @@
     <footer class="mainfooter" role="contentinfo">
 
         <div class="footer-content">
-            <div class="footer-icon">
-                <a href="mailto:kitabeaurkahaniya@gmail.com" target="_blank"><i class="fa fa-google fa-2x"
-                        aria-hidden="true"></i></a>
-                <a href="https://github.com/Praful932/Kitabe"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                <div class=" copy pt-1">
-                    <p class="text-center">&copy; Copyright 2020 - <strong>Kitabe</strong> All rights reserved.</p>
-                </div>
-            </div>
+            <p class="text-center">
+                <p>&copy; Create by <strong>Sulpa</strong> group</p>
+                <!-- <p class="pinfo">
+                    <a href="https://github.com/hnagn2003">Nguyen Hoai Ngan</a>
+                    <a href="https://github.com/mairyy">Nguyen Thi Quynh Mai</a>
+                    <a href="">Le Phuong Linh</a>
+                    <a href="">Vu Phuong Hong</a>    
+                </p> -->
+                
+            </p>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
