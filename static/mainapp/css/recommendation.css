@@ -6,11 +6,10 @@
 }
 
 .heading {
-    font-family: "Lobster", cursive;
+    font-family: 'Didact Gothic', sans-serif;
     font-size: 300%;
-    background-color: #d7722c;
     margin-top: 0px;
-    color: white;
+    color: #433d89;
 }
 
 .cover-img {
@@ -22,8 +21,8 @@
     display: flex;
     padding: 25px;
     width: 33.33%;
-    height: 250px;
-    background-color: #133050;
+    height: 350px;
+    background-color: #F3E7DD;
 }
 
 .book-photo {
@@ -48,7 +47,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color: #ffffff;
+    color: #433d89;
     font-weight: 600;
     font-size: larger;
 }
@@ -63,12 +62,12 @@
 
 .book-content {
     padding: 0 20px;
-    color: #ffffff;
+    color: black;
     overflow: hidden;
 }
 
 .book-voters {
-    color: #fff;
+    color: black;
     vertical-align: sub;
     font-size: 18px;
     margin-left: 7px;
@@ -156,7 +155,7 @@
 
 .rating-block {
     text-align: center;
-    background-color: #31c2cf;
+    background-color: #9b94bb;
     font-weight: 600;
     font-size: 15px;
     border-radius: 20px;
