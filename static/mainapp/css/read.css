@@ -4,9 +4,9 @@
 
 .genre-head,
 .topbook-head {
-    font-family: "Lobster", cursive;
+    font-family: 'Didact Gothic', sans-serif;
     font-size: 300%;
-    background-color: #d7722c;
+    color: #433d89;
     margin-top: 0px;
     color: white;
 }
@@ -31,6 +31,7 @@
     box-shadow: -2px 6px 19px 0px #7f818e;
     margin-left: auto;
     margin-right: auto;
+    background-color: #F3E7DD;
 }
 
 .card-title {
@@ -97,7 +98,7 @@
 .rating-block {
     display: inline-block;
     text-align: center;
-    background-color: #31c2cf;
+    background-color: #9b94bb;
     font-weight: 600;
     font-size: 1rem;
     border-radius: 20px;

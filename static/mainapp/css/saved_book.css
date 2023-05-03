@@ -1,9 +1,9 @@
 .genre-head {
-    font-family: "Lobster", cursive;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #433d89;
     font-size: 300%;
     background-color: #d7722c;
     margin-top: 0px;
-    color: white;
 }
 
 #sekil img {
@@ -86,7 +86,7 @@
 .rating-block {
     display: inline-block;
     text-align: center;
-    background-color: #31c2cf;
+    background-color: #9b94bb;
     font-weight: 600;
     font-size: 1rem;
     border-radius: 20px;
