@@ -30,7 +30,7 @@ fa-google {
 .googlebutton:hover {
     color: #727ff0;
     background-color: #C2A792;
-    border: 3px solid #727ff0;
+    border: 2px solid #727ff0;
 }
 
 .img-block {
@@ -100,7 +100,7 @@ label {
 .signupbutton:hover {
     color: #727ff0;
     background-color: #C2A792;
-    border: 3px solid #727ff0;
+    border: 2px solid #727ff0;
 }
 
 strong {
