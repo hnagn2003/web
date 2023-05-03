@@ -10,6 +10,7 @@ Sign Up
 
 {% block head %}
 <link rel="stylesheet" href="{% static 'mainapp/css/signup.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 {% endblock head %}
 
 {% block main %}
@@ -31,29 +32,33 @@ Sign Up
                     <br><br>
                     {{ form.password2 }}
                     <div class="error_div">
-                    {% if form.errors %}
-                    {% for field in form %}
-                    {% for error in field.errors %}
-                    <strong>{{ error|escape }}</strong>
-                    {% endfor %}
-                    {% endfor %}
-                    {% for error in form.non_field_errors %}
-                    <strong>{{ error|escape }}</strong>
-                    {% endfor %}
-                    <br>
-                    {% endif %}
-                    <button class="signupbutton" type="submit">{% trans "Sign Up" %}</button>
-                    <br>
+                        {% if form.errors %}
+                        {% for field in form %}
+                        {% for error in field.errors %}
+                        <strong>{{ error|escape }}</strong>
+                        {% endfor %}
+                        {% endfor %}
+                        {% for error in form.non_field_errors %}
+                        <strong>{{ error|escape }}</strong>
+                        {% endfor %}
+                        <br>
+                        {% endif %}
+                        <button class="signupbutton" type="submit">{% trans "Sign Up" %}</button>
+                        <strong>or</strong>
+                        <a href="{% provider_login_url 'google' %}">
+                            <button class="googlebutton">
+                                <i class="fa fa-google fa-x" aria-hidden="true"></i> 
+                                Sign Up With Google
+                            </button>
+                        </a>
+                        <br>
+                        <a class="btn-bot" href="{% url 'account_login' %}"><strong>Already have an account?</strong></a>
+                        <br>
                     </div>
+                    
                 </div>
-
+                
             </form>
-            <a href="{% provider_login_url 'google' %}"><button class="googlebutton"><i class="fa fa-google fa-x"
-                aria-hidden="true"></i> Sign Up With Google</button></a>
-
-        </div>
-        <div class="h-100 hidden-sm col-xl-4 img-block mw-100" style="background-image : url('{% static "mainapp/png/BookSignIn.webp" %}')">
-            <a class="btn-bot" href="{% url 'account_login' %}">SIGN IN</a>
         </div>
     </div>
 </div>
