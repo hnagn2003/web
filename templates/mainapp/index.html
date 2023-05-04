@@ -33,11 +33,7 @@
         <div class="carousel-inner" role="listbox">
             
             <div class="carousel-item active">
-                <picture>
-                    <source class="banner-img" media="(max-width: 710px)" srcset="{% static 'mainapp/png/banner/banner1.png' %}">
-                    <source class="banner-img" media="(max-width: 1700px)" srcset="{% static 'mainapp/png/banner/banner1.png' %}">
-                    <img class="banner-img"  src="{% static 'mainapp/png/banner/banner1.png' %}" alt="Slide">
-                </picture>
+                <img class="banner-img" src="{% static 'mainapp/png/banner/banner1.png' %}" alt="Banner">
             </div>
 
             <!-- <div class="carousel-item">
@@ -316,14 +312,13 @@
                             <div class='rating-block' id='rating-block-{{ book.book_id }}' onmouseover="rateStart(this)"
                                 onclick='rateBook(this)' onmouseout='finishRate(this)' data-book-id="{{ book.book_id }}">
                                 <div id='button-text-{{ book.book_id }}'>Rate <i class="fa fa-heart" style="color:red"></i>
-                                    This Book</a>
+                                    This Book
                                 </div>
                                 <div class='rateYo' id='rate-{{ book.book_id }}'></div>
                             </div>
                             {% else %}
                             <div class='rating-block btn' onclick="location.href='{% url 'account_signup' %}'">
                                 <div id='button-text'>Rate <i class="fa fa-heart" style="color:red"></i> This Book
-                                    </a>
                                 </div>
                             </div>
                             {% endif %}
