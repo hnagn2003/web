@@ -147,8 +147,13 @@ strong {
     background-color: #9b94bb;
 }
 
+.top-books {
+    margin-top: -5%;
+}
+
 .top-books-carousel {
     align-items: center;
+    margin-top: -3%;
     margin-left: -13%;
     margin-right: -13%;
 }
@@ -224,6 +229,7 @@ ol.carousel-indicators li.active {
     border-radius: 3px;
     height: 300px;
     display: inline-flex;
+    background-color: #F3E7DD;
 }
 
 .card-img {
