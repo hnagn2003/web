@@ -312,7 +312,7 @@
             var bookid = obj.getAttribute('data-book-id');
             var bookrating = $('#rate-' + bookid).rateYo('rating');
             $('#rating-block-' + bookid).css('transition', 'background-color 2s ease');
-            $('#rating-block-' + bookid).css('background-color', '#29BF12');
+            $('#rating-block-' + bookid).css('background-color', '#9b94bb');
             console.log('#rating-block-' + bookid);
             $.ajax({
                 data: {
@@ -338,7 +338,7 @@
                 $('#rate-' + bookid).css('display', 'none');
                 $('#button-text-' + bookid).css('display', 'block');
                 $('#rating-block-' + bookid).css('transition', 'background-color 2s ease');
-                $('#rating-block-' + bookid).css('background-color', '#31c2cf');
+                $('#rating-block-' + bookid).css('background-color', '#9b94bb');
             }, 4000);
         }
 
@@ -374,12 +374,12 @@
                     $('#save-book-button').on('click', function() {
                         var bookid = obj.getAttribute('data-book-id');
                         $('#save-book-button').css('transition', 'background-color 2s ease');
-                        $('#save-book-button').css('background-color', '#ffa007');
+                        $('#save-book-button').css('background-color', '#F3E7DD');
                         $('#save-book-button').text('Saved !');
                         setTimeout(function() {
                             $('#save-book-button').text('Save for Later');
                             $('#save-book-button').css('transition', 'background-color 2s ease');
-                            $('#save-book-button').css('background-color', '#ffc107');
+                            $('#save-book-button').css('background-color', '#F3E7DD');
                         }, 3000);
                         $.ajax({
                             data: {
