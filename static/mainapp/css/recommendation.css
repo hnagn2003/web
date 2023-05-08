@@ -143,7 +143,6 @@
     right: 26%;
     margin-top: 20%;
     bottom: 70px;
-    margin-right: -12px;
 }
 
 .more-details:hover {
@@ -163,10 +162,6 @@
     bottom: 10px;
     position: absolute;
     left: 50%;
-}
-
-.more-details {
-    padding-left: -2px;
 }
 
 .rating-block:hover {
