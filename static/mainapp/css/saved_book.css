@@ -112,8 +112,13 @@
 }
 
 .des {
-    background-color: #d7722c;
-    color: white;
+    background-color: #F3E7DD;
+    color: black;
+}
+
+.des:hover {
+    background-color: #FFDAB9;
+    color: black;
 }
 
 .pagination {
