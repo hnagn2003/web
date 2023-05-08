@@ -31,3 +31,11 @@ class SaveForLater(models.Model):
 
     def __str__(self):
         return self.user.username.capitalize() + "- " + get_book_title(self.bookid)
+
+class AllBooks(models.Model):
+    book_id = models.IntegerField()
+    book_title = models.TextField()
+    authors = models.TextField()
+
+    def __str__(self):
+        return self.book_title
