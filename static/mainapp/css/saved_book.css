@@ -2,7 +2,6 @@
     font-family: 'Didact Gothic', sans-serif;
     color: #433d89;
     font-size: 300%;
-    background-color: #d7722c;
     margin-top: 0px;
 }
 
@@ -48,7 +47,7 @@
 
 .remove {
     margin-top: 10px;
-    background-color: red;
+    background-color: rgb(230, 66, 66);
     text-align: center;
     font-weight: 600;
     font-size: 1rem;
@@ -59,9 +58,9 @@
 }
 
 .remove:hover {
-    color: red;
+    color: rgb(230, 66, 66);
     background: white;
-    border: 2px solid red;
+    border: 2px solid rgb(230, 66, 66);
     text-shadow: 1px 1px 3px #ffcccb;
 }
 
